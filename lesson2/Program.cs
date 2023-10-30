@@ -32,7 +32,11 @@ if (number2/100==0)
 }
 else
 {
-    Console.WriteLine($"the third digit is `{(number2%1000)/100}`");
+    while(number2>999)
+    {
+        number2=number2/10;
+    }
+    Console.WriteLine($"the third digit is `{number2%10}`");
 }
 
 //Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
